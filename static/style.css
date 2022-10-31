@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*COLORS
+
+azul claro: #BCCEF8
+rosa claro: #FFD1D1
+azul escuro 1A374D
+azul açai 495371
+
+F2EBE9
+*/
+
+header{
+    width: 100wh;
+    padding: 15px 100px;
+    background-color:#495371;
+    display: flex;
+    left: 0;
+}
+
+.logo{
+    width: 50px;
+}
+
+main{
+    padding: 30px 100px;
+    background-color: #F2EBE9;
+    height: 70vh;
+}
+
+footer{
+    padding: 15px 100px;
+    background-color:#1D5C63;
+}
+
+menu a{
+    color: #FFFFFF;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: left;
+}
+
+h1{
+    font-size: 25px;
+    color: #FFFFFF;
+    font-weight: 100px;
+}
+
+p{
+    font-weight: bold;
+}
+
+button{
+    padding: 10px 30px;
+    border: 1px solid #e1e1e1;
+    border-radius: 100px;
+}
+
+button:hover{
+    transform:scale(1.2);
+    transition: .4s ease-in-out;
+}

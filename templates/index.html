@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" style="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>BDG - Web App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <img class="logo" src="{{ url_for('static', filename='dna.png') }}">
+    <h1>BANCO DE DADOS GENÉTICO</h1>
+    <menu>
+        <item><a href="./index">Home</a></item>
+        <item><a href="#">Sobre</a></item>
+        <item><a href="./dna/">Lista</a></item>
+    </menu>
+
+</header>
+
+<main>
+    <div>
+        <p>Bem vindo ao projeto didático para desenvolvimento
+            de aplicações web utilizando o framework flask junto
+            a ferramento ORM SQLAlchemy.
+        </p>
+
+        <a href="./dna/new"><button>Novo DNA</button></a>
+        <a href="./dna/"><button>Lista</button></a>
+    </div>
+</main>
+
+<footer>
+    <p>{{ now }}</p>
+</footer>
+
+</body>
+</html>

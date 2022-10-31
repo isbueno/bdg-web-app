@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DNA LIST</title>
+</head>
+<body>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <td>ID</td>
+        <td>SEQUENCIA</td>
+      </tr>
+    </thead>
+    <tbody>
+      {% for dna in dnas %}
+        <tr>
+          <td>{{ dna.id }}</td>
+          <td>{{ dna.sequencia }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+
+
+  </table>
+
+</body>
+</html>
