@@ -1,54 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" style="text/css" href="{{ url_for('static', filename='style.css') }}">
+{% extends "base.html" %}
 
-    <head>
-        {% if title %}
-        <title>{{ title }} - BDG</title>
-        {% else %}
-        <title>WEB APP</title>
-        {% endif %}
-    </head>
+{% block content %}
+    <div  id="banner">
+    </div>
 
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-</head>
-<body>
-
-<header>
-        <div>
-            <img class="logo" src="{{ url_for('static', filename='dna.png') }}">
-            <h1>BANCO DE DADOS GENÉTICO</h1>
+    <main>
+    <div style="display: flex;">
+        <div style="width:50%">
+            <h2>Título H2</h2></br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra ligula lacus,
+               et accumsan massa aliquet vitae. Mauris rutrum turpis sed viverra ultrices. Morbi lorem
+               ex, porttitor ut purus eu, lobortis aliquet massa. Sed scelerisque sagittis turpis, ac
+               vestibulum lorem accumsan quis. Praesent maximus sapien accumsan odio feugiat, a viverra
+               mauris congue. Donec imperdiet quam in sodales ultrices. Praesent lacinia sed mi in accumsan.
+               Duis ac ipsum erat. In lectus ante, placerat ornare volutpat ac, malesuada id mi.
+            </p>
         </div>
-        <menu>
-            <item><a href="./index">Home</a></item>
-            <item><a href="#">Sobre</a></item>
-            <item><a href="./dna/">Lista</a></item>
-        </menu>
 
-</header>
-
-<main>
-    <div>
-        <p>Bem vindo ao projeto didático para desenvolvimento
-            de aplicações web utilizando o framework flask junto
-            a ferramento ORM SQLAlchemy.
-        </p>
+        <div class="btn-menu" style="width:50%; background-color: #F1f1f1; padding: 30px; margin:10px;">
+           <h2>Selecione uma função</h2></br>
+           <a href="./dna/new"><button>Inserir DNA</button></a>
+           <a href="./dna/"><button style="padding: 10px 35px;">Consultar Lista</button></a>
+        </div>
     </div>
-    <div class="btn-menu">
-       <a href="./dna/new"><button>Novo DNA</button></a>
-       <a href="./dna/"><button>Ver Lista</button></a>
-    </div>
-</main>
-
-<footer>
-    <p>{{ now }}</p>
-</footer>
-
-</body>
-
-</html>
+    </main>
+{% endblock %}

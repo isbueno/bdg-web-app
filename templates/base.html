@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" style="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+    {% if title %}
+    <title>{{ title }} - BDG</title>
+    {% else %}
+    <title>Banco de dados Genético</title>
+    {% endif %}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    {% endblock %}
+</head>
+
+<body>
+
+    {% block header %}
+    <header>
+             <div>
+                <img class="logo" src="{{ url_for('static', filename='dna.png') }}">
+                <h1>BANCO DE DADOS GENÉTICO</h1>
+            </div>
+            <menu>
+                <item><a href="/index">Home</a></item>
+                <item><a href="#">Sobre</a></item>
+                <item><a href="/dna/">Lista</a></item>
+            </menu>
+    </header>
+    {% endblock %}
+
+    {% block content %}{% endblock %}
+
+    {% block footer %}
+    <footer>
+        <p>{{ now }}</p>
+    </footer>
+    {% endblock %}
+
+</body>
+
+
+
+</html>

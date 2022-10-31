@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>DNA LIST</title>
-      <link rel="stylesheet" style="text/css" href="{{ url_for('static', filename='style.css') }}">
+{% extends "base.html" %}
 
-</head>
-<body>
+<title>DNA LIST</title>
 
-  <table border="1">
+{% block content %}
+    <div class="banner-interna">
+      <h1>LISTAGEM DNA</h1>
+    </div>
+
+<main>
+  <table>
     <thead>
       <tr>
         <td>ID</td>
@@ -23,9 +23,9 @@
         </tr>
       {% endfor %}
     </tbody>
-
-
   </table>
 
-</body>
-</html>
+  <a href="./new"><button  style="margin-top: 30px;">Inserir DNA</button></a>
+
+</main>
+{% endblock %}

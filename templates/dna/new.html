@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-        <link rel="stylesheet" style="text/css" href="{{ url_for('static', filename='style.css') }}">
+{% extends "base.html" %}
 
-</head>
-<body>
+<title>Inserir novo DNA</title>
+
+{% block content %}
+<div class="banner-interna">
+    <h1>Inserir novo DNA</h1>
+</div>
+
+<main>
 
     {% for field, errors in form.errors.items() %}
     <p style="color: red">
@@ -26,5 +27,6 @@
         <input type="submit" value="Create"/>
     </form>
 
-</body>
-</html>
+</main>
+
+{% endblock %}
