@@ -10,12 +10,13 @@ azul-turquesa:#36B6AC
 azul-claro:
 fundo claro:#EEEEEE
 rosa-slides:#f58ba2;
+0E5E6F
 */
 
 header{
     width: 100wh;
     padding: 10px 100px;
-    background-color:#404258;
+    background-color:#0E5E6F;
     display: flex;
     justify-content: space-between;
     vertical-align: baseline;
@@ -42,13 +43,9 @@ header div{
 
 .banner-interna {
     width: 100wh;
-    height: 20vh;
+    height: 30px;
     padding: 30px 100px;
-    background-image: url(banner-principal.png);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position:center;
-    background-size: cover;
+    background-color: #1d1d1d;
 }
 
 .banner-interna h1{
@@ -74,7 +71,7 @@ main div.btn-menu{
 footer{
     color: #FFFFFF;
     padding: 30px 100px;
-    background-color:#404258;
+    background-color:#0E5E6F;
 }
 
 menu{
@@ -102,21 +99,24 @@ h2{
 
 p{
     font-weight: bold;
+    text-align: justify;
 }
 
 button{
     margin-bottom: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px 50px;
-    border: 1px solid #C2DED1;
-    border-radius: 100px;
-    background-color: #C2DED1;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 55px;
+    border: 2px solid #0E5E6F;
+    border-radius: 30px;
+    background-color: #FFFFFF00;
+    text-justify: inter-character;
 }
 
 button:hover{
-    background-color: #36B6AC;
-    transition: .4s ease-in-out;
+    color: #FFFFFF;
+    background-color: #0E5E6F;
+    transition: .2s ease-in-out;
 }
 
 table, td{
@@ -127,4 +127,20 @@ table, td{
 
 table td:first-chield{
     background-color: #e1e1e1;
+}
+
+form{
+    padding: 0px;
+}
+
+form input{
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    width: 400px;
+}
+
+label{
+    margin: 5px 0;
 }

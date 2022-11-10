@@ -25,6 +25,6 @@ def new_dna():
         db.session.add(dna)
         db.session.commit()
         time.sleep(5)
-        return redirect('/list')
+        return redirect('/dna')
 
     return render_template("dna/new.html", form=form)
