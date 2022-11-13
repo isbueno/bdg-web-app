@@ -1,7 +1,8 @@
 flask
+flask_login
 flask_sqlalchemy
-
 flask_wtf
-wtf
+
+mysql-connector-python
 
 requests

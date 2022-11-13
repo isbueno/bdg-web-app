@@ -26,9 +26,23 @@
                 <h1>BANCO DE DADOS GENÉTICO</h1>
             </div>
             <menu>
+                {% if current_user.is_authenticated %}
+
                 <item><a href="/index">Home</a></item>
                 <item><a href="#">Sobre</a></item>
                 <item><a href="/dna/">Lista</a></item>
+                <item><a href="{{ url_for('login_blueprint.logout') }}">Logout</a></item>
+
+                {% else %}
+
+                <item>
+                    <item><a href="{{ url_for('login_blueprint.register') }}">Cadastre-se</a></item>
+                </item>
+
+                <item><a href="./login">Login</a></item>
+
+                {% endif %}
+
             </menu>
     </header>
     {% endblock %}
