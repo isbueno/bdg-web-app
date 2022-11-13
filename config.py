@@ -18,7 +18,7 @@ class DevelopmentConfig(Config):
     TESTING = DEBUG = True
 
     DATABASE_URI = "sqlite:///:memory:"
-    DATABASE_URI = "mysql+mysqlconnector://root:polimataIFSP.email23@localhost/dbg"
+    DATABASE_URI = "mysql+mysqlconnector://root:password@localhost/dbg"
     SQLALCHEMY_DATABASE_URI = DATABASE_URI
 
     SESSION_PROTECTION = "strong"
