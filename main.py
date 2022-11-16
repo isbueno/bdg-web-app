@@ -34,7 +34,7 @@ def create_app():
                 name="Isabely Bueno",
                 email="23.isabelybueno@gmail.com",
                 password="123456",
-                birthdate=datetime(2003, 02, 23).date()
+                birthdate=datetime(2003, 0o2, 23).date()
             ))
             db.session.commit()
 

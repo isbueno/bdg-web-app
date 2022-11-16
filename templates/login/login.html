@@ -1,23 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-</head>
-<body>
+{% extends "base.html" %}
 
-<form method="POST" action="{{ url_for('login_blueprint.login') }}">
-    {{ form.hidden_tag() }}
-    <div>
-        {{ form.email.label }} {{ form.email() }}
-    </div>
-    <div>
-        {{ form.password.label }} {{ form.password() }}
-    </div>
-    <div>
-        {{ form.submit() }}
-    </div>
-</form>
+{% block content %}
+   <div class="banner-interna">
+        <h1>Faça Login no Banco de Dados Genético</h1>
+   </div>
 
-</body>
-</html>
+   <main>
+       <form method="POST" action="{{ url_for('login_blueprint.login') }}">
+           {{ form.hidden_tag() }}
+           <div>
+               {{ form.email.label }} {{ form.email() }}
+           </div>
+           <div>
+               {{ form.password.label }} {{ form.password() }}
+           </div>
+           <div>
+               {{ form.submit() }}
+           </div>
+       </form>
+   </main>
+{% endblock %}
