@@ -6,7 +6,7 @@
     <link rel="stylesheet" style="text/css" href="{{ url_for('static', filename='style.css') }}">
 
     {% if title %}
-    <title>{{ title }} - BDG</title>
+    <title>{% block title %}{% endblock %} - My Webpage</title>
     {% else %}
     <title>Banco de dados Genético</title>
     {% endif %}
@@ -39,7 +39,7 @@
                     <item><a href="{{ url_for('login_blueprint.register') }}">Cadastre-se</a></item>
                 </item>
 
-                <item><a href="./login">Login</a></item>
+                <item><a href="{{ url_for('login_blueprint.login') }}">Login</a></item>
 
                 {% endif %}
 

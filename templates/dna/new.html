@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-<title>Inserir novo DNA</title>
+<title xmlns="http://www.w3.org/1999/html">Inserir novo DNA</title>
 
 {% block content %}
 
@@ -20,9 +20,9 @@
             {{ form.id.label }} {{ form.id() }}
         </div>
         <div>
-            {{ form.sequencia.label }} {{ form.sequencia(size=20) }}
+            {{ form.sequencia.label }} {{ form.sequencia(size=30) }}
         </div>
-        <button type="submit" value="Create"/>
+        <button type="submit" value="Create">Inserir</button>
     </form>
 
 </main>

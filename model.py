@@ -33,7 +33,7 @@ class User(db.Model, UserMixin):
 
 class DNA(db.Model):
 
-    id = db.Column(db.Integer, primary_key=True)
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
 
     sequencia = db.Column(db.String(30), nullable=False)
 
